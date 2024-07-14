@@ -1,3 +1,10 @@
+use ast::OmlValue;
+
+pub mod ast;
+
 fn main() {
-    println!("Hello, world!");
+    match OmlValue::from_str("") {
+        Ok(val) => println!("Success: {:?}", val),
+        Err(err) => println!("Error: {}", err),
+    }
 }
