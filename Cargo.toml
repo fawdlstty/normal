@@ -1,18 +1,3 @@
-[package]
-name = "normal"
-version = "0.0.0"
-edition = "2021"
-rust-version = "1.77"
-license = "MIT"
-repository = "https://github.com/fawdlstty/channel-rs"
-homepage = "https://github.com/fawdlstty/channel-rs"
-description = "Rust advanced queue library"
-keywords = ["oml", "markup", "configuration"]
-categories = []
-
-[dependencies]
-pest = "2.7.11"
-pest_derive = "2.7.11"
-
-[features]
-default = []
+[workspace]
+resolver = "2"
+members = ["normal", "normal-macro"]
